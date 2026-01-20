@@ -13,6 +13,14 @@
   --breakpoint-lg: 976px;
   --breakpoint-xl: 1440px;
 }
+/* Uitilites */
+@utility bg-header {
+  background-image: url("/images/bg-header-mobile.png");
+
+  @variant md {
+    background-image: url("/images/bg-header-desktop.png");
+  }
+}
 
 /* Base */
 @layer base {
