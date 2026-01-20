@@ -22,6 +22,10 @@
     @apply font-bold text-darkGrayishBlue mb-8;
   }
 
+  h1 {
+    @apply text-4xl md:text-5xl leading-tight;
+  }
+
   h2 {
     @apply text-3xl md:text-4xl;
   }
