@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* COLORS */
+  --color-strongCyan: hsl(171, 66%, 44%);
+  --color-lightBlue: hsl(233, 100%, 69%);
+  --color-darkGrayishBlue: hsl(210, 10%, 33%);
+  --color-grayishBlue: hsl(201, 11%, 60%);
+
+  /* SCREENS */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+}
+
+/* Base */
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-darkGrayishBlue mb-8;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h5 {
+    @apply font-bold text-darkGrayishBlue text-2xl mb-2;
+  }
+}
+
+/* Components */
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-10 text-center;
+  }
+
+  .section-content {
+    @apply max-w-3xl mx-auto text-xl text-center leading-9 text-grayishBlue;
+  }
+
+  .button-container {
+    @apply flex flex-col items-center justify-center w-full text-white text-xl space-y-6 md:flex-row md:space-x-4 md:space-y-0;
+  }
+}
